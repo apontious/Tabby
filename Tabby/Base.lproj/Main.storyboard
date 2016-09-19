@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JiB-fh-XF7" kind="relationship" relationship="viewControllers" id="H6X-uW-Q7n"/>
+                        <segue destination="ZyT-fS-Yss" kind="relationship" relationship="viewControllers" id="GeJ-Cn-6Oc"/>
+                        <segue destination="wWV-uL-O7N" kind="relationship" relationship="viewControllers" id="eDJ-hh-JCZ"/>
+                        <segue destination="Ns0-Os-Ukv" kind="relationship" relationship="viewControllers" id="KLY-cK-LKS"/>
+                        <segue destination="ReV-7C-hez" kind="relationship" relationship="viewControllers" id="XN9-yL-LaR"/>
+                        <segue destination="ObH-zm-Ipk" kind="relationship" relationship="viewControllers" id="Sep-A8-KMi"/>
+                        <segue destination="glL-fl-Y3O" kind="relationship" relationship="viewControllers" id="LGI-zT-cCi"/>
+                        <segue destination="4Sw-hY-b6V" kind="relationship" relationship="viewControllers" id="hwj-m4-E25"/>
+                        <segue destination="Cd8-Zq-Mfa" kind="relationship" relationship="viewControllers" id="V8E-7K-lhN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3738" y="1516"/>
+        </scene>
+        <!--Red Navigation Controller-->
+        <scene sceneID="d8u-0S-2NL">
+            <objects>
+                <navigationController id="JiB-fh-XF7" userLabel="Red Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Red" image="circle" id="C3R-VZ-eBL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r3Y-4E-ZZV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dGY-Pj-10J" kind="relationship" relationship="rootViewController" id="7QE-Oo-rmJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4N-pB-2x5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2198" y="-1369"/>
+        </scene>
+        <!--Red-->
+        <scene sceneID="yoX-7p-mxG">
+            <objects>
+                <tableViewController id="dGY-Pj-10J" customClass="ColorViewController" customModule="Tabby" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nvm-dq-pb2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4xQ-2x-Ujb">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4xQ-2x-Ujb" id="YUD-oO-WY4">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dGY-Pj-10J" id="GH2-2t-5hX"/>
+                            <outlet property="delegate" destination="dGY-Pj-10J" id="E1W-vg-8R9"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Red" image="circle" id="xoE-w3-cCd"/>
+                    <navigationItem key="navigationItem" title="Red" id="P1C-Cg-piL"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vjw-XP-k0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1366" y="-1370"/>
+        </scene>
+        <!--Green Navigation Controller-->
+        <scene sceneID="b7A-JV-4iH">
+            <objects>
+                <navigationController title="Green" id="ZyT-fS-Yss" userLabel="Green Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Green" image="circle" id="6l9-iN-vyy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZIN-B9-R6e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kVc-xu-M7H" kind="relationship" relationship="rootViewController" id="jrM-yn-Dxl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bb0-yV-b5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2199" y="-607"/>
+        </scene>
+        <!--Green-->
+        <scene sceneID="sI0-IQ-ug6">
+            <objects>
+                <tableViewController id="kVc-xu-M7H" customClass="ColorViewController" customModule="Tabby" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="e8S-6h-x8F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="clE-du-kej">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="clE-du-kej" id="ba7-Mx-FLH">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kVc-xu-M7H" id="bb5-HL-tTV"/>
+                            <outlet property="delegate" destination="kVc-xu-M7H" id="w3e-Iq-cqV"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Green" image="circle" id="RXi-ez-Bf3"/>
+                    <navigationItem key="navigationItem" title="Green" id="oPh-dL-JBA"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQE-Kh-5vP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1367" y="-608"/>
+        </scene>
+        <!--Blue Navigation Controller-->
+        <scene sceneID="bxb-Ij-8CO">
+            <objects>
+                <navigationController title="Blue" id="wWV-uL-O7N" userLabel="Blue Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Blue" image="circle" id="lID-1U-JgY"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PbP-SW-oM7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JHK-vy-8TR" kind="relationship" relationship="rootViewController" id="mEO-pr-E41"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVw-Eg-ab8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2199" y="107"/>
+        </scene>
+        <!--Blue-->
+        <scene sceneID="WMn-W0-7ga">
+            <objects>
+                <tableViewController id="JHK-vy-8TR" customClass="ColorViewController" customModule="Tabby" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nU9-DG-Z7S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZDa-5V-RF6">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZDa-5V-RF6" id="5eT-EH-KQo">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JHK-vy-8TR" id="oT5-AW-rem"/>
+                            <outlet property="delegate" destination="JHK-vy-8TR" id="oVi-sM-Siy"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Blue" image="circle" id="Bde-E0-rPd"/>
+                    <navigationItem key="navigationItem" title="Blue" id="cns-P7-YLf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hq2-E2-7Ts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1367" y="106"/>
+        </scene>
+        <!--Cyan Navigation Controller-->
+        <scene sceneID="6RV-cr-wf2">
+            <objects>
+                <navigationController title="Green" id="Ns0-Os-Ukv" userLabel="Cyan Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cyan" image="circle" id="XPM-8v-R5b"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qg6-aP-Rkk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DVD-Xe-6Mk" kind="relationship" relationship="rootViewController" id="ksK-hc-vOA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10a-Xl-1Gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2199" y="818"/>
+        </scene>
+        <!--Cyan-->
+        <scene sceneID="e5W-Kk-cup">
+            <objects>
+                <tableViewController id="DVD-Xe-6Mk" customClass="ColorViewController" customModule="Tabby" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fHz-dO-f8W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jBo-mL-lmU">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jBo-mL-lmU" id="ngf-O1-2HL">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DVD-Xe-6Mk" id="CL8-Ua-eBE"/>
+                            <outlet property="delegate" destination="DVD-Xe-6Mk" id="PNQ-Ha-IXR"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Cyan" image="circle" id="vHH-3G-Qa5"/>
+                    <navigationItem key="navigationItem" title="Cyan" id="wop-sd-rNu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLA-AQ-g4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1367" y="817"/>
+        </scene>
+        <!--Yellow Navigation Controller-->
+        <scene sceneID="CJP-4E-zNB">
+            <objects>
+                <navigationController title="Green" id="ReV-7C-hez" userLabel="Yellow Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Yellow" image="circle" id="bo5-K8-ftW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ydL-bs-23x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TuI-is-Cbk" kind="relationship" relationship="rootViewController" id="WzF-xM-Q5r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqx-5K-5fW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2199" y="1518"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="7xS-Ba-x2F">
+            <objects>
+                <tableViewController id="TuI-is-Cbk" customClass="ColorViewController" customModule="Tabby" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ltz-cj-Hs8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tgk-qo-Fen">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tgk-qo-Fen" id="FN4-fx-Gu3">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TuI-is-Cbk" id="no6-mH-pcR"/>
+                            <outlet property="delegate" destination="TuI-is-Cbk" id="oI0-eM-6V4"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Yellow" image="circle" id="7eK-0i-hjU"/>
+                    <navigationItem key="navigationItem" title="Yellow" id="7Ic-yg-3hB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HkE-23-OZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1367" y="1517"/>
+        </scene>
+        <!--Magenta Navigation Controller-->
+        <scene sceneID="cbP-OK-dsF">
+            <objects>
+                <navigationController title="Green" id="ObH-zm-Ipk" userLabel="Magenta Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Magenta" image="circle" id="3MG-QY-3Yf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hoA-9n-Dg6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="had-ch-2dp" kind="relationship" relationship="rootViewController" id="tzN-l5-QgE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCe-b5-dhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2199" y="2211"/>
+        </scene>
+        <!--Magenta-->
+        <scene sceneID="eH6-Dx-5wr">
+            <objects>
+                <tableViewController id="had-ch-2dp" customClass="ColorViewController" customModule="Tabby" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Ji-el-BpB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZOW-bP-dIb">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZOW-bP-dIb" id="QUb-nr-ITS">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="had-ch-2dp" id="keL-Gx-hgx"/>
+                            <outlet property="delegate" destination="had-ch-2dp" id="tpR-zi-5oD"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Magenta" image="circle" id="F4a-YS-0Ds"/>
+                    <navigationItem key="navigationItem" title="Magenta" id="6p4-bM-03m"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="1" green="0.49803921568627452" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ssb-39-l2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1367" y="2210"/>
+        </scene>
+        <!--Orange Navigation Controller-->
+        <scene sceneID="QlQ-Ga-G3c">
+            <objects>
+                <navigationController title="Green" id="glL-fl-Y3O" userLabel="Orange Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Orange" image="circle" id="bug-zV-ACv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IkI-KO-Y5S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HPH-4P-fAt" kind="relationship" relationship="rootViewController" id="iKL-HA-q7W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Waz-S1-ls4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2199" y="2908"/>
+        </scene>
+        <!--Orange-->
+        <scene sceneID="qKQ-Ai-9JL">
+            <objects>
+                <tableViewController id="HPH-4P-fAt" customClass="ColorViewController" customModule="Tabby" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mgu-SD-H1A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lZX-fJ-0fj">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lZX-fJ-0fj" id="ihB-zA-Ede">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HPH-4P-fAt" id="evl-GF-Kab"/>
+                            <outlet property="delegate" destination="HPH-4P-fAt" id="f4W-cY-Ccn"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Orange" image="circle" id="js9-wa-65K"/>
+                    <navigationItem key="navigationItem" title="Orange" id="SOR-IB-Esl"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTI-U4-96o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1367" y="2907"/>
+        </scene>
+        <!--Purple Navigation Controller-->
+        <scene sceneID="kVv-Mg-YKg">
+            <objects>
+                <navigationController title="Green" id="4Sw-hY-b6V" userLabel="Purple Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Purple" image="circle" id="z9k-Od-RaX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hJZ-Xq-GyY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XzH-iF-5pj" kind="relationship" relationship="rootViewController" id="OdV-W7-84T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcq-Fv-0jE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2182" y="3601"/>
+        </scene>
+        <!--Purple-->
+        <scene sceneID="sI8-y4-b7N">
+            <objects>
+                <tableViewController id="XzH-iF-5pj" customClass="ColorViewController" customModule="Tabby" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qr8-or-Etl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="k9A-8L-qXP">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k9A-8L-qXP" id="vBN-YM-PGQ">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XzH-iF-5pj" id="dzb-4q-zl7"/>
+                            <outlet property="delegate" destination="XzH-iF-5pj" id="p26-3C-hQn"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Purple" image="circle" id="Ycb-Ri-BTZ"/>
+                    <navigationItem key="navigationItem" title="Purple" id="RTW-kL-uze"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVf-4N-Yx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1367" y="3600"/>
+        </scene>
+        <!--Brown Navigation Controller-->
+        <scene sceneID="eqC-bD-Rjq">
+            <objects>
+                <navigationController title="Green" id="Cd8-Zq-Mfa" userLabel="Brown Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Brown" image="circle" id="q7s-TX-aFi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S7Q-HP-Iu8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jom-EJ-XgG" kind="relationship" relationship="rootViewController" id="MWF-TG-Z8G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3u-dR-YjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2183" y="4286"/>
+        </scene>
+        <!--Brown-->
+        <scene sceneID="Gkd-31-Nbv">
+            <objects>
+                <tableViewController id="jom-EJ-XgG" customClass="ColorViewController" customModule="Tabby" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="u3J-a2-94N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Mko-fc-Ufk">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mko-fc-Ufk" id="x8i-f9-c48">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jom-EJ-XgG" id="pSA-zK-Mr3"/>
+                            <outlet property="delegate" destination="jom-EJ-XgG" id="9oV-8d-CgU"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Brown" image="circle" id="fKf-H8-krD"/>
+                    <navigationItem key="navigationItem" title="Brown" id="J4Q-kw-bve"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7v-Ov-B75" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1367" y="4285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle" width="30" height="30"/>
+    </resources>
+</document>

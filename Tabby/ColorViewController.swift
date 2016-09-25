@@ -58,12 +58,8 @@ class ColorViewController: UITableViewController {
 		newColorViewController.color = self.color
 		
 		self.tableView.deselectRow(at: indexPath, animated: true)
-		
-		// Why can't I just use the ! at the end of this to make these non-optional in the middle of the line below? Why must I make them separate variables and then later unwrap them? Swift is hard! (I.e. I don't understand this yet.)
-		let fuckingOptionalTitle = self.navigationItem.title?.components(separatedBy: " ")[0]
-		let fuckingOptionalCount = self.navigationController?.viewControllers.count
-		
-		newColorViewController.title = "\(fuckingOptionalTitle!) \(fuckingOptionalCount! + 1)"
+	
+		newColorViewController.title = "\(self.navigationItem.title!.components(separatedBy: " ")[0]) \(self.navigationController!.viewControllers.count + 1)"
 		
 		self.navigationController?.pushViewController(newColorViewController, animated: true)
 	}
